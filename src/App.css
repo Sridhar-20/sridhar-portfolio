@@ -460,6 +460,21 @@ section h2 {
   color: #000000;
 }
 
+#about p,
+#skills .skill-card,
+#projects .project-card h3,
+#projects .project-card p,
+section .card h4,
+section .card p {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+#about .container p {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
 /* Different colors for each section heading */
 #about h2 {
   background: linear-gradient(135deg, #10b981, #06b6d4);
