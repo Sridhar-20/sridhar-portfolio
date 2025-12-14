@@ -1,177 +1,4 @@
-/* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-}
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: #111;
-  color: white;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-section {
-  padding: 60px;
-}
-
-.hero {
-  background: #0d6efd;
-  color: white;
-  text-align: center;
-}
-
-.project {
-  background: white;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: white;
-  color: #0d6efd;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
-
-  section {
-    padding: 30px 20px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero h3 {
-    font-size: 16px;
-  }
-}
-
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-:root {
-  --primary: #2563eb;
-  --dark: #0f172a;
-  --light: #f8fafc;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--light);
-  color: var(--dark);
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: white;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 500;
-}
-
-.hero {
-  padding: 120px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: white;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: white;
-  color: var(--primary);
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-}
-
-.card, .project-card, .skill-card {
-  background: white;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
- */
-
-
- 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
@@ -622,3 +449,80 @@ section h2 {
 .skill-card:nth-child(6) { animation-delay: 0.6s; }
 .skill-card:nth-child(7) { animation-delay: 0.7s; }
 .skill-card:nth-child(8) { animation-delay: 0.8s; }
+
+
+section h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInUp 0.6s ease-out;
+  font-weight: 700;
+}
+
+/* Different colors for each section heading */
+#about h2 {
+  background: linear-gradient(135deg, #10b981, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#skills h2 {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#projects h2 {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#contact h2 {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Education heading - default gradient */
+section:not(#about):not(#skills):not(#projects):not(#contact) h2 {
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+#contact a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+#contact a p {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact a:hover p {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(236, 72, 153, 0.15));
+  border-left-color: var(--secondary);
+}
+
+/* Project Card GitHub Icon */
+.project-card a {
+  flex-shrink: 0;
+}
+
+.project-card h3 {
+  flex: 1;
+}
+
+.project-card > div {
+  margin-bottom: 15px;
+}
