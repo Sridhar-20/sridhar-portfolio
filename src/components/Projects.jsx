@@ -1,24 +1,27 @@
+import { motion } from "framer-motion";
+
 function Projects() {
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <div className="container">
+        <h2>Projects</h2>
 
-      <div className="project">
-        <h3>Employee Attrition Prediction & Retention System</h3>
-        <p><b>Tech:</b> Python, Scikit-learn, Flask</p>
-        <p>
-          Built a supervised ML model to predict employee attrition and
-          generate insights to design targeted retention strategies.
-        </p>
-      </div>
+        <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          <h3>Employee Attrition Prediction</h3>
+          <p>
+            Machine learning system to predict employee attrition and provide
+            retention strategies.
+          </p>
+          <span>Python • ML • Flask</span>
+        </motion.div>
 
-      <div className="project">
-        <h3>StudentHub – Academic Management Application</h3>
-        <p><b>Tech:</b> Python, Tkinter, SQLite</p>
-        <p>
-          Developed a desktop-based academic management system with
-          authentication, student records, and result tracking.
-        </p>
+        <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          <h3>StudentHub</h3>
+          <p>
+            Academic management system with authentication, courses, and results.
+          </p>
+          <span>Python • Tkinter • SQLite</span>
+        </motion.div>
       </div>
     </section>
   );

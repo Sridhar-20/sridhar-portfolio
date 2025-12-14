@@ -1,19 +1,20 @@
 function Skills() {
   return (
     <section id="skills">
-      <h2>Skills</h2>
+      <div className="container">
+        <h2>Skills</h2>
 
-      <h4>Programming Languages</h4>
-      <p>Python, Java, JavaScript</p>
-
-      <h4>Web Development</h4>
-      <p>HTML, CSS, Bootstrap, Flask, MySQL, MongoDB</p>
-
-      <h4>Machine Learning</h4>
-      <p>Scikit-learn, Pandas, NumPy, Matplotlib, Plotly</p>
-
-      <h4>Tools</h4>
-      <p>Git, GitHub, VS Code, Postman</p>
+        <div className="skills-grid">
+          <div className="skill-card">Python</div>
+          <div className="skill-card">Java</div>
+          <div className="skill-card">JavaScript</div>
+          <div className="skill-card">React</div>
+          <div className="skill-card">Flask</div>
+          <div className="skill-card">MongoDB</div>
+          <div className="skill-card">MySQL</div>
+          <div className="skill-card">Git & GitHub</div>
+        </div>
+      </div>
     </section>
   );
 }
