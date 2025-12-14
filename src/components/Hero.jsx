@@ -15,7 +15,7 @@ function Hero() {
         I build intelligent systems and user-friendly web applications
         that solve real-world problems.
       </p>
-      <a className="btn" href="/Sridhar_Bhukya_Resume.pdf" download="Sridhar_Bhukya_Resume.pdf">
+      <a className="btn" href="/Sridhar_Bhukya.pdf" download="Sridhar_Bhukya.pdf">
         Download Resume
       </a>
     </motion.section>
