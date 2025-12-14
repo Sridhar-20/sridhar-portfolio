@@ -218,11 +218,24 @@ section h2 {
   font-size: 42px;
   text-align: center;
   margin-bottom: 50px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   animation: fadeInUp 0.6s ease-out;
+  font-weight: 700;
+  color: #000000 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #000000 !important;
+  background-clip: unset !important;
+}
+
+/* Ensure all section headings are black */
+#about h2,
+#skills h2,
+#projects h2,
+#contact h2,
+section h2 {
+  color: #000000 !important;
+  background: none !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 
 /* Cards */
@@ -475,34 +488,9 @@ section .card p {
   font-weight: 600;
 }
 
-/* Different colors for each section heading */
-#about h2 {
-  background: linear-gradient(135deg, #10b981, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-#skills h2 {
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-#projects h2 {
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-#contact h2 {
-  background: linear-gradient(135deg, #6366f1, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 /* Education heading - default gradient */
 section:not(#about):not(#skills):not(#projects):not(#contact) h2 {
